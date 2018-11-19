@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="/css/register.css"/>
+	</head>
+	<body>
+		<header></header>
+		<div class="login-log">
+			欢迎注册
+		</div>
+		<div class="login-bg">
+			<div class="container">
+				<form>
+					<p class="login-ac"><a href="/html/login.html">登录</a><a href="javascript:;">注册</a></p>
+					<p><a href="javascript:;">使用手机号码注册</a></p>
+					<p class="hint" id="hint1">请输入正确的邮箱地址</p>
+					<p class="hint" id="hint2">密码最低为6位</p>
+					<p class="hint" id="hint3">两次输入的密码不同</p>
+					<input type="text" id="mailbox" placeholder="请填写您的E-main地址"/>
+					<input type="password" id="password1" placeholder="用户密码"/>
+					<input type="password" id="password2" placeholder="请再次输入密码"/>
+					<input class="yz" placeholder="验证码"/><p class="wjmm"><a href="javascript:;">看不清，换一张</a></p>
+					<button id="btn">立即注册</button>
+				</form>
+			</div>
+		</div>
+		<footer></footer>
+		<script src="/libs/require/require.js" type="text/javascript" data-main="/js/register.js"></script>
+	</body>
+</html>

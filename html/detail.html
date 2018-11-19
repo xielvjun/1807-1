@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="/css/detail.css"/>
+	</head>
+	<body>
+		<header></header>
+		<div class="breadcrumbs">
+			<div class="container">
+				<p id="proName">
+					<script type="text/html" id="name-template">
+						<a href="javascript:void(0);">首页</a>><a href="javascript:;">永生花</a>
+						<span>{{data[0].name}}</span>
+					</script>
+				</p>
+			</div>
+		</div>
+		<div class="product-wrapper">
+			<div class="container">
+				<div class="product-l" id="tab">
+					<script type="text/html" id="img-template">
+					<div class="big-img">
+						<img class="ac" src="{{data[0].bimage1}}">
+						<img src="{{data[0].bimage2}}">
+						<img src="{{data[0].bimage3}}">
+						<img src="{{data[0].bimage4}}">
+					</div>
+					<ul class="small-img">
+						<li data-index="0"><a href="javascript:;"><img src="{{data[0].simage1}}"></a></li>
+						<li data-index="1"><a href="javascript:;"><img src="{{data[0].simage2}}"></a></li>
+						<li data-index="2"><a href="javascript:;"><img src="{{data[0].simage3}}"></a></li>
+						<li data-index="3"><a href="javascript:;"><img src="{{data[0].simage4}}"></a></li>
+					</ul>
+				<div class="biger-image">
+				</div>
+				</script>
+				</div>
+				
+				<div class="product-r">
+					
+					<div class="title" id="title">
+						
+						<script type="text/html" id="h-template">
+						<h3>{{data[0].name}}</h3>
+						<p>{{data[0].name}}</p>
+						</script>
+						
+					</div>
+					
+					
+					<div class="attribute">
+						<p><span>类 别：</span>礼品-永生花 编 号：1073183</p>
+						<p><span>材 料：</span>品牌：「泰迪珍藏」经典畅销款Teddy Bear Collection泰迪珍藏授权正版泰迪公仔（高16cm）；搭配厄瓜多尔进口永生紫玫瑰1朵</p>
+						<p><span>包 装：</span>泰迪珍藏高档礼盒</p>
+						<p><span>备 注：</span>她有一颗温暖的心，足以融化我的孤独，她有甜美的笑容，令我快乐，令我想唱歌！</p>
+						<p><span>附 送：</span>下单填写留言，即免费赠送精美贺卡！</p>
+						<p><span>配 送：</span>顺丰快递深圳发货, 全国可达, 包邮!</p>
+						<p><span>说 明：</span>经典畅销款Teddy Bear Collection泰迪珍藏授权正版首发上市，限量特价！</p>
+					</div>
+					<div class="price" id="price">
+						<script type="text/html" id="price-template">
+							<p>市场价：￥398</p>
+							<p>花礼价：￥<span>{{data[0].price}}</span></p>
+						</script>
+					</div>
+					<div class="addBtn" id="addBtn">
+						<a href="javascript:;" id="add"><span></span>立即购买</a>
+						<a href="javascript:;"><span></span>收藏</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<footer></footer>
+		
+		<script src="/libs/require/require.js" type="text/javascript" data-main="/js/detail.js"></script>
+	</body>
+</html>

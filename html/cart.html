@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="/css/cart.css"/>
+	</head>
+	<body>
+		<header></header>
+		<div class="cart">
+			<div class="container">
+				<div class="cart-title">
+					<ul>
+						<li>商品名称</li>
+						<li>市场价</li>
+						<li>订购价</li>
+						<li>数量</li>
+						<li>操作</li>
+					</ul>
+				</div>
+				<div class="list-cart" id="list-cart">
+						<script type="text/html" id="cart-template">
+							{{each prd item i}}
+							<ul data-id="{{item.id}}" class="ul-id">
+								<li class="selecter"><span class="choise ac"></span></li>
+								<li class="img-box"><img src="{{item.simage1}}"></li>
+								<li class="name">{{item.name}}</li>
+								<li class="markt-price">￥599</li>
+								<li class="price">￥<span class="utim_price">{{item.price}}</span></li>
+								<li class="num">
+									<div class="num-box">
+										<span class="reduce_num"></span><input type="text" value="{{item.num}}" class="amount"><span class="add_num"></span>
+									</div>
+								</li>
+								<li><a href="javacript:;" class="deleteBtn">删除</a></li>
+							</ul>
+							{{/each}}
+						</script>
+						
+				</div>
+				 
+				<div class="count">
+					<div class="return">
+						<span></span>
+						<a href="/index.html">继续挑选</a>
+					</div>
+					
+					<div class="c-money">
+						<p>应付金额:￥<span id="countMoeny"></span></p>
+						<button type="button">去结算</button>
+					</div>
+				</div>
+				
+				
+					
+				</div>
+				
+			</div>
+		</div>
+		<footer></footer>
+		<script src="/libs/require/require.js" type="text/javascript" data-main="/js/cart.js"></script>
+	</body>
+</html>

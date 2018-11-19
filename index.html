@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		
+	</head>
+	<body>
+		<div class="changeLess">
+		</div>
+		<!--网页头部-->
+		<header></header>
+		<!--首页主体部分-->
+		
+		<!--轮播图-->
+		<div class="main">
+			<div class="slideshows" id="slideshows">
+				
+			</div>
+			
+			<!--品牌认证-->
+			<div class="toper-server">
+				<ul>
+					<a href="javascript:;"><li><span></span><h4>鲜花电商龙头</h4><i>销量领先，权威认证龙头企业</i></li></a>
+					<a href="javascript:;"><li><span></span><h4>13年品牌 真实口碑</h4><i>最近评价 275287条</i></li></a>
+					<a href="javascript:;"><li><span></span><h4>鲜花实拍秀展示</h4><i>敢展现送前实拍的鲜花网</i></li></a>
+					<a href="javascript:;"><li><span></span><h4>3小时送花</h4><i>全国连锁，3小时送2000城市</i></li></a>
+					<a href="javascript:;"><li><span></span><h4>200%退赔承诺</h4><i>可靠的售后保障</i></li></a>
+				</ul>
+			</div>
+			
+			<!--限时推荐-->
+			<div class="time-limit">
+				<ul>
+					<li><a href="javascript:;"><span></span><p>限时推荐</p></a></li>
+					<li><a href="javascript:;"><img src="/images/xianshi_1_180626.jpg"></a></li>
+					<li><a href="javascript:;"><img src="/images/xianshi_2_180626.jpg"></a></li>
+					<li><a href="javascript:;"><img src="/images/xianshi_3_180626.jpg"></a></li>
+					<li><a href="javascript:;"><img src="/images/18_youflower_pcsmall.jpg"></a></li>
+				</ul>
+			</div>
+			
+			<!--爱情鲜花-->
+			<div class="floor-f1">
+				<div class="container">
+					<p><a href="javascript:;">永生花</a><span>许·她一生承诺</span><a href="javascript:;"><i>更多永生花 >></i></a></p>
+					<div class="left">
+						<a href="javascript:;">
+							<img src="/images/banner_song.jpg"/>
+							<p><span>永生花专区 >></span></p>
+						</a>
+					</div>
+					<div class="right">
+						<ul id="proList">
+							
+							<script type="text/html" id="pro-template">
+								{{each data item i}}
+									<li><a href="/html/detail.html?id={{item.id}}">
+										<img src="{{item.image}}">
+										<i>{{item.name}}</br></i>
+										<span>￥</span><span>{{item.price}}</span>
+									</a></li>
+								{{/each}}
+							</script>
+							
+							
+							<!--<li><a href="javascript:;"><img src="/images/9010947.jpg_220x240.jpg"><i>永生花 · 恋心</br></i><span>￥288</span></a></li>
+							<li><a href="javascript:;"><img src="/images/9010966.jpg_220x240.jpg"><i>永生花 · 彩虹下的约定/花的嫁纱银项链</br></i><span>￥368</span></a></li>
+							<li><a href="javascript:;"><img src="/images/9012055.jpg_220x240.jpg"><i>永生花 · 花漾蜜恋·淡雅紫</br></i><span>￥298</span></a></li>
+							<li><a href="javascript:;"><img src="/images/9012078.jpg_220x240.jpg"><i>永生花 · 一生一世</br></i><span>￥198</span></a></li>
+							<li><a href="javascript:;"><img src="/images/9012092.jpg_220x240.jpg"><i>永生花 · 海洋之恋</br></i><span>￥999</span></a></li>
+							<li><a href="javascript:;"><img src="/images/9012167.jpg_220x240.jpg"><i>永生花 · 温柔清浅</br></i><span>￥366</span></a></li>
+							<li><a href="javascript:;"><img src="/images/9012177.jpg_220x240.jpg"><i>永生花 · Hello Kitty怦然心动相框／粉色</br></i><span>￥298</span></a></li>-->
+							
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+			
+			<!--感恩鲜花-->
+			<div class="floor-f2">
+				<div class="container">
+					<p><a href="javascript:;">送长辈鲜花</a><span>赠·父母/恩师/长辈</span><a href="javascript:;"><i>更多送长辈鲜花 >></i></a></p>
+					<div class="left">
+						<a href="javascript:;">
+							<img src="/images/banner_elder.jpg"/>
+							<p><span>送长辈鲜花专区 >></span></p>
+						</a>
+					</div>
+					<div class="right">
+						<ul>
+							<li><a href="javascript:;"><img src="/images/9012190.jpg_220x240.jpg"><i>鲜花 · 圆满</br></i><span>￥286</span></a></li>
+							<li><a href="javascript:;"><img src="/images/9010947.jpg_220x240.jpg"><i>鲜花 · 恩情无限</br></i><span>￥178</span></a></li>
+							<li><a href="javascript:;"><img src="/images/9010966.jpg_220x240.jpg"><i>鲜花 · 留住好时光</br></i><span>￥239</span></a></li>
+							<li><a href="javascript:;"><img src="/images/9012055.jpg_220x240.jpg"><i>鲜花 · 母爱</br></i><span>￥178</span></a></li>
+							<li><a href="javascript:;"><img src="/images/9012078.jpg_220x240.jpg"><i>鲜花 · 感激</br></i><span>￥218</span></a></li>
+							<li><a href="javascript:;"><img src="/images/9012092.jpg_220x240.jpg"><i>鲜花 · 温情祝福</br></i><span>￥195</span></a></li>
+							<li><a href="javascript:;"><img src="/images/9012167.jpg_220x240.jpg"><i>鲜花 · 馨情无限</br></i><span>￥246</span></a></li>
+							<li><a href="javascript:;"><img src="/images/9012177.jpg_220x240.jpg"><i>鲜花 · 一缕清香</br></i><span>￥198</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+			<!--永生花-->
+			<div class="floor-f3">
+				<div class="container">
+					<p><a href="javascript:;">永生花</a><span>许·她一生承诺</span><a href="javascript:;"><i>更多永生花 >></i></a></p>
+					<div class="left">
+						<a href="javascript:;">
+							<img src="/images/banner_song.jpg"/>
+							<p><span>永生花专区 >></span></p>
+						</a>
+					</div>
+					<div class="right">
+						<ul>
+							<li><a href="javascript:;"><img src="/images/1073181.jpg_220x240.jpg"><i>永生花 · 「泰迪珍藏」泰迪熊永生花公仔/红</br></i><span>￥298</span></a></li>
+							<li><a href="javascript:;"><img src="/images/9010947.jpg_220x240.jpg"><i>永生花 · 恋心</br></i><span>￥288</span></a></li>
+							<li><a href="javascript:;"><img src="/images/9010966.jpg_220x240.jpg"><i>永生花 · 彩虹下的约定/花的嫁纱银项链</br></i><span>￥368</span></a></li>
+							<li><a href="javascript:;"><img src="/images/9012055.jpg_220x240.jpg"><i>永生花 · 花漾蜜恋·淡雅紫</br></i><span>￥298</span></a></li>
+							<li><a href="javascript:;"><img src="/images/9012078.jpg_220x240.jpg"><i>永生花 · 一生一世</br></i><span>￥198</span></a></li>
+							<li><a href="javascript:;"><img src="/images/9012092.jpg_220x240.jpg"><i>永生花 · 海洋之恋</br></i><span>￥999</span></a></li>
+							<li><a href="javascript:;"><img src="/images/9012167.jpg_220x240.jpg"><i>永生花 · 温柔清浅</br></i><span>￥366</span></a></li>
+							<li><a href="javascript:;"><img src="/images/9012177.jpg_220x240.jpg"><i>永生花 · Hello Kitty怦然心动相框／粉色</br></i><span>￥298</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+			<!--礼品-->
+			<div class="floor-f4">
+				<div class="container">
+					<p><a href="javascript:;">礼品</a><span>给她·最美好的礼物</span><a href="javascript:;"><i>更多礼品 >></i></a></p>
+					<div class="left">
+						<a href="javascript:;">
+							<img src="/images/banner_gift.jpg"/>
+							<span>礼品专区 >></span>
+						</a>
+						<div class="left1">
+							<b>按礼品类别选购</b></br>
+							<a href="javascript:;">水晶内雕-3D激光内雕水晶</a></br>
+							<a href="javascript:;">进口/泰国保鲜花</a>
+							<a href="javascript:;">金箔玫瑰/金箔画</a></br>
+							<a href="javascript:;">精品音乐盒/八音盒</a>
+						</div>
+						<div class="left2">
+							<b>按礼品用途选购</b></br>
+							<a href="javascript:;">生日礼品</a>
+							<a href="javascript:;">约会/求爱礼品</a>
+							<a href="javascript:;">结婚礼品</a></br>
+							<a href="javascript:;">感谢/祝福礼品</a>
+							<a href="javascript:;">拜访/探望礼品</a></br>
+							<a href="javascript:;">结婚纪念日礼品</a>
+						</div>
+					</div>
+					<div class="right">
+						<ul>
+							<li><a href="javascript:;"><img src="/images/1061006.jpg_220x240.jpg"><i>礼品 · 999纯金箔玫瑰+陶瓷花瓶</br></i><span>￥298</span></a></li>
+							<li><a href="javascript:;"><img src="/images/1073033.jpg_220x240.jpg"><i>礼品 · 美丽无限</br></i><span>￥206</span></a></li>
+							<li><a href="javascript:;"><img src="/images/1065004.jpg_220x240.jpg"><i>礼品 · 宝石旋转木马/蓝</br></i><span>￥199</span></a></li>
+							<li><a href="javascript:;"><img src="/images/9012055.jpg_220x240.jpg"><i>礼品 · 心形3D水晶内雕爱在心里</br></i><span>￥245</span></a></li>
+							<li><a href="javascript:;"><img src="/images/9012078.jpg_220x240.jpg"><i>礼品 · 十八音粉水晶钢琴</br></i><span>￥128</span></a></li>
+							<li><a href="javascript:;"><img src="/images/9012092.jpg_220x240.jpg"><i>礼品 · 一路上有你</br></i><span>￥520</span></a></li>
+							<li><a href="javascript:;"><img src="/images/9012167.jpg_220x240.jpg"><i>礼品 · 斜口瓶花</br></i><span>￥309</span></a></li>
+							<li><a href="javascript:;"><img src="/images/9012177.jpg_220x240.jpg"><i>礼品 · Hello Kitty转运水晶化妆镜</br></i><span>￥459</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+			
+			<!--网站资讯-->
+			<div class="warp-option">
+				<div class="container">
+					<div class="news1">
+						<h4>感动瞬间<a href="javascript:;" class="more"></a></h4>	
+						<ul>
+							<li><a href="javascript:;">8年送花99束，神一样的花礼网客户</a></li>
+							<li><a href="javascript:;">花礼网用户故事 | 那些感动我们的,</a></li>
+							<li><a href="javascript:;">鲜花——见证跨越海峡的异地恋</a></li>
+							<li><a href="javascript:;">你和恋人都是怎样确定关系的？</a></li>
+							<li><a href="javascript:;">超感动 | 花礼网用户真情告白故事</a></li>
+							<li><a href="javascript:;">盘点花礼用户印象中最深刻的一次亲吻</a></li>
+						</ul>
+					</div>
+					<div class="comments">
+						<h4>最新评价<a href="javascript:;" class="more"></a></h4>
+						<dl>
+							<dt><a href="javascript:;"><img src="/images/9012177.jpg_80x87.jpg"></a></dt>
+							<dd><a href="javascript:;">内容:花还可以，送得及时</a></dd>
+							<span></span>
+							<i>2018-11-01</i>
+						</dl>
+						<dl>
+							<dt><a href="javascript:;"><img src="/images/9010947.jpg_80x87.jpg"></a></dt>
+							<dd><a href="javascript:;">非常满意</a></dd>
+							<span></span>
+							<i>2018-11-01</i>
+						</dl>
+						<dl>
+							<dt><a href="javascript:;"><img src="/images/9012030.jpg_80x87.jpg"></a></dt>
+							<dd><a href="javascript:;">内容： 很好，开始一直担心靠不靠谱，第一次送按时到了</a></dd>
+							<span></span>
+							<i>2018-11-01</i>
+						</dl>
+					</div>
+					<div class="news2">
+						<h4>热门资讯<a href="javascript:;" class="more"></a></h4>
+						<ul>
+							<li><a href="javascript:;">12星座异地恋如何维持？送你一份</a></li>
+							<li><a href="javascript:;">送花的含义，生活中怎么送花？</a></li>
+							<li><a href="javascript:;">送女朋友鲜花，送花卡片写什么？</a></li>
+							<li><a href="javascript:;">异地恋有大招，教你不分手！</a></li>
+							<li><a href="javascript:;">2018年圣诞祝福怎么说？201</a></li>
+							<li><a href="javascript:;">如何让绣球花开爆盆？</a></li>
+						</ul>
+						<ul>
+							<li><a href="javascript:;">双11.11鲜花</a></li>
+							<li><a href="javascript:;">鲜花枝数与其对应的含意</a></li>
+							<li><a href="javascript:;">鲜花寓意 浪漫花语</a></li>
+							<li><a href="javascript:;">通用送花祝福语-经典送花祝福语</a></li>
+							<li><a href="javascript:;">送花的常识与技巧</a></li>
+							<li><a href="javascript:;">女孩都喜欢别人送鲜花吗？</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+			<!--app+微信-->
+			<div class="warp-app">
+				<div class="container">
+					<div class="left">
+						<dl>
+							<dt><img src="/images/app_download_qrcode.png"></dt>
+							<dd>
+								<i>手机APP下载</i></br>
+								<span>新人专享100元大礼包</span>
+								<a href="javascript:;"></a>
+								<a href="javascript:;"></a>
+							</dd>
+						</dl>
+					</div>
+					<div class="center">
+						<a href="javascript:;"><img src="/images/home_manhua.jpg"></a>
+					</div>
+					<div class="right">
+						<dl>
+							<dt><img src="/images/app_download_qrcode.png"></dt>
+							<dd>
+								<i>关注微信</i></br>
+								<span>回复“礼物”有惊喜!</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;活动多多，在花礼遇见幸福的自己</span>
+								<b></b>
+							</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+			
+			<!--尾部服务-->
+			<div class="footer-server">
+				<div class="container">
+					<ul>
+						<li><a href="javascript:;"><span></span>十三年品牌</a></li>
+						<li><a href="javascript:;"><span></span>销量领先</a></li>
+						<li><a href="javascript:;"><span></span>百万客户信赖</a></li>
+						<li><a href="javascript:;"><span></span>时尚原创花艺</a></li>
+						<li><a href="javascript:;"><span></span>订单实拍</a></li>
+						<li><a href="javascript:;"><span></span>低价保障</a></li>
+						<li><a href="javascript:;"><span></span>3小时配送</a></li>
+						<li><a href="javascript:;"><span></span>200%退赔承诺</a></li>
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+		
+		
+		
+		<footer></footer>
+		
+		<script src="libs/require/require.js" type="text/javascript" data-main="js/index.js"></script>
+	</body>
+</html>

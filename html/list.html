@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="/css/list.css"/>
+	</head>
+	<body>
+		<header></header>
+		<div class="bg-danger">
+			<img src="/images/ysh-top-banner.jpg">
+		</div>
+		<div class="main">
+			<div class="container">
+				<!--总分类-->
+				<div class="filterbar">
+					<ul>
+						<li><a href="javascript:;">综合</a></li>
+						<li><a href="javascript:;">销量</a></li>
+						<li><a href="javascript:;">价格</a></li>
+						<li><a href="javascript:;">最新</a></li>
+					</ul>
+				</div>
+				<div class="product-filter">
+					<!--按不同对象分类-->
+					<p>分类:<a href="javascript:;">全部</a><a href="javascript:;">经典花盒</a><a href="javascript:;">巨型玫瑰</a><a href="javascript:;">永生瓶花</a><a href="javascript:;">特色永生花</a></p>
+					<p>人群:<a href="javascript:;">送恋人送爱人</a><a href="javascript:;">送父母送长辈</a><a href="javascript:;">送朋友送同事</a></p>
+				</div>
+				
+				
+				<!--产品-->
+				<div class="product">
+					<ul id="proList">
+						<!--<li><a href="javascript:;">
+							<div class="pd-img"><img src="/images/1060013.jpg_220x240.jpg"></div>
+							<div class="product-info">
+								<p>爆款特惠！</p>
+								<h5>永生花/一生一世</h5>
+								<p class="desc">厄瓜多尔进口永生红玫1朵，双色永生绣球</p>
+								<span>￥<span><span>198</span>
+							</div>
+						</a></li>-->
+						
+						<script type="text/html" id="pro-template">
+							{{each image item i}}
+							<li><a href="javascript:;">
+							<div class="pd-img"><img src="{{item.src}}"></div>
+							<div class="product-info">
+							<p>{{ item.title1 }}</p>
+							<h5>{{item.title2}}</h5>
+							<p class="desc">{{item.title3}}</p>
+							<span>￥<span><span>{{item.price}}</span>
+							</div>
+							</a></li>
+							{{/each}}
+						
+						
+						
+						
+						<li><a href="javascript:;">
+							<div class="pd-img"><img src="/images/1073158.jpg_220x240.jpg"></div>
+							<div class="product-info">
+								<p>Dior、YSL3款口红可选 </p>
+								<h5>永生花/我如此爱你-口红款520</h5>
+								<p class="desc">专柜正品Dior#520口红＋进口永生玫瑰礼盒</p>
+								<span>￥<span><span>588</span>
+							</div>
+						</a></li>
+						
+						<li><a href="javascript:;">
+							<div class="pd-img"><img src="../images/1070064.jpg_220x240.jpg"></div>
+							<div class="product-info">
+								<p>爆款特惠！</p>
+								<h5>特色永生花/恋心</h5>
+								<p class="desc">蓝色永生玫瑰＋紫色永生玫瑰</p>
+								<span>￥<span><span>288</span>
+							</div>
+						</a></li>
+						
+						<li><a href="javascript:;">
+							<div class="pd-img"><img src="../images/1073045.jpg_220x240.jpg"></div>
+							<div class="product-info">
+								<p>11.11首发,表白脱单神器！ </p>
+								<h5>永生花/「倾情系列」5201314/红</h5>
+								<p class="desc">正品YSL圣罗兰/迪奥口红套装＋进口永生玫瑰礼盒</p>
+								<span>￥<span><span>1314</span>
+							</div>
+						</a></li>
+						
+						<li><a href="javascript:;">
+							<div class="pd-img"><img src="../images/1060011.jpg_220x240.jpg"></div>
+							<div class="product-info">
+								<p>爆款特惠！</p>
+								<h5>永生花/一生一世</h5>
+								<p class="desc">厄瓜多尔进口永生红玫1朵，双色永生绣球</p>
+								<span>￥<span><span>198</span>
+							</div>
+						</a></li>
+						
+						</script>
+						
+						
+						
+						
+						<li><a href="javascript:;">
+							<div class="pd-img"><img src="../images/1073033.jpg_220x240.jpg"></div>
+							<div class="product-info">
+								<p>爆款特惠！</p>
+								<h5>永生花/一生一世</h5>
+								<p class="desc">厄瓜多尔进口永生红玫1朵，双色永生绣球</p>
+								<span>￥<span><span>198</span>
+							</div>
+						</a></li>
+						
+						<li><a href="javascript:;">
+							<div class="pd-img"><img src="../images/1073034.jpg_220x240.jpg"></div>
+							<div class="product-info">
+								<p>爆款特惠！</p>
+								<h5>永生花/一生一世</h5>
+								<p class="desc">厄瓜多尔进口永生红玫1朵，双色永生绣球</p>
+								<span>￥<span><span>198</span>
+							</div>
+						</a></li>
+						
+						<li><a href="javascript:;">
+							<div class="pd-img"><img src="../images/1073100.jpg_220x240.jpg"></div>
+							<div class="product-info">
+								<p>爆款特惠！</p>
+								<h5>永生花/一生一世</h5>
+								<p class="desc">厄瓜多尔进口永生红玫1朵，双色永生绣球</p>
+								<span>￥<span><span>198</span>
+							</div>
+						</a></li>
+						
+						<li><a href="javascript:;">
+							<div class="pd-img"><img src="/images/1060013.jpg_220x240.jpg"></div>
+							<div class="product-info">
+								<p>爆款特惠！</p>
+								<h5>永生花/一生一世</h5>
+								<p class="desc">厄瓜多尔进口永生红玫1朵，双色永生绣球</p>
+								<span>￥<span><span>198</span>
+							</div>
+						</a></li>
+						
+						<li><a href="javascript:;">
+							<div class="pd-img"><img src="/images/1073158.jpg_220x240.jpg"></div>
+							<div class="product-info">
+								<p>Dior、YSL3款口红可选 </p>
+								<h5>永生花/我如此爱你-口红款520</h5>
+								<p class="desc">专柜正品Dior#520口红＋进口永生玫瑰礼盒</p>
+								<span>￥<span><span>588</span>
+							</div>
+						</a></li>
+						
+						<li><a href="javascript:;">
+							<div class="pd-img"><img src="../images/1070064.jpg_220x240.jpg"></div>
+							<div class="product-info">
+								<p>爆款特惠！</p>
+								<h5>特色永生花/恋心</h5>
+								<p class="desc">蓝色永生玫瑰＋紫色永生玫瑰</p>
+								<span>￥<span><span>288</span>
+							</div>
+						</a></li>
+						
+						<li><a href="javascript:;">
+							<div class="pd-img"><img src="../images/1073045.jpg_220x240.jpg"></div>
+							<div class="product-info">
+								<p>11.11首发,表白脱单神器！ </p>
+								<h5>永生花/「倾情系列」5201314/红</h5>
+								<p class="desc">正品YSL圣罗兰/迪奥口红套装＋进口永生玫瑰礼盒</p>
+								<span>￥<span><span>1314</span>
+							</div>
+						</a></li>
+						
+						<li><a href="javascript:;">
+							<div class="pd-img"><img src="../images/1060011.jpg_220x240.jpg"></div>
+							<div class="product-info">
+								<p>爆款特惠！</p>
+								<h5>永生花/一生一世</h5>
+								<p class="desc">厄瓜多尔进口永生红玫1朵，双色永生绣球</p>
+								<span>￥<span><span>198</span>
+							</div>
+						</a></li>
+						
+						<li><a href="javascript:;">
+							<div class="pd-img"><img src="../images/1073033.jpg_220x240.jpg"></div>
+							<div class="product-info">
+								<p>爆款特惠！</p>
+								<h5>永生花/一生一世</h5>
+								<p class="desc">厄瓜多尔进口永生红玫1朵，双色永生绣球</p>
+								<span>￥<span><span>198</span>
+							</div>
+						</a></li>
+						
+						<li><a href="javascript:;">
+							<div class="pd-img"><img src="../images/1073034.jpg_220x240.jpg"></div>
+							<div class="product-info">
+								<p>爆款特惠！</p>
+								<h5>永生花/一生一世</h5>
+								<p class="desc">厄瓜多尔进口永生红玫1朵，双色永生绣球</p>
+								<span>￥<span><span>198</span>
+							</div>
+						</a></li>
+						
+						<li><a href="javascript:;">
+							<div class="pd-img"><img src="../images/1073100.jpg_220x240.jpg"></div>
+							<div class="product-info">
+								<p>爆款特惠！</p>
+								<h5>永生花/一生一世</h5>
+								<p class="desc">厄瓜多尔进口永生红玫1朵，双色永生绣球</p>
+								<span>￥<span><span>198</span>
+							</div>
+						</a></li>
+						
+						<li><a href="javascript:;">
+							<div class="pd-img"><img src="/images/1060013.jpg_220x240.jpg"></div>
+							<div class="product-info">
+								<p>爆款特惠！</p>
+								<h5>永生花/一生一世</h5>
+								<p class="desc">厄瓜多尔进口永生红玫1朵，双色永生绣球</p>
+								<span>￥<span><span>198</span>
+							</div>
+						</a></li>
+						
+						<li><a href="javascript:;">
+							<div class="pd-img"><img src="/images/1073158.jpg_220x240.jpg"></div>
+							<div class="product-info">
+								<p>Dior、YSL3款口红可选 </p>
+								<h5>永生花/我如此爱你-口红款520</h5>
+								<p class="desc">专柜正品Dior#520口红＋进口永生玫瑰礼盒</p>
+								<span>￥<span><span>588</span>
+							</div>
+						</a></li>
+						
+						<li><a href="javascript:;">
+							<div class="pd-img"><img src="../images/1070064.jpg_220x240.jpg"></div>
+							<div class="product-info">
+								<p>爆款特惠！</p>
+								<h5>特色永生花/恋心</h5>
+								<p class="desc">蓝色永生玫瑰＋紫色永生玫瑰</p>
+								<span>￥<span><span>288</span>
+							</div>
+						</a></li>
+						
+						<li><a href="javascript:;">
+							<div class="pd-img"><img src="../images/1073045.jpg_220x240.jpg"></div>
+							<div class="product-info">
+								<p>11.11首发,表白脱单神器！ </p>
+								<h5>永生花/「倾情系列」5201314/红</h5>
+								<p class="desc">正品YSL圣罗兰/迪奥口红套装＋进口永生玫瑰礼盒</p>
+								<span>￥<span><span>1314</span>
+							</div>
+						</a></li>
+						
+						<li><a href="javascript:;">
+							<div class="pd-img"><img src="../images/1060011.jpg_220x240.jpg"></div>
+							<div class="product-info">
+								<p>爆款特惠！</p>
+								<h5>永生花/一生一世</h5>
+								<p class="desc">厄瓜多尔进口永生红玫1朵，双色永生绣球</p>
+								<span>￥<span><span>198</span>
+							</div>
+						</a></li>
+						
+						<li><a href="javascript:;">
+							<div class="pd-img"><img src="../images/1073033.jpg_220x240.jpg"></div>
+							<div class="product-info">
+								<p>爆款特惠！</p>
+								<h5>永生花/一生一世</h5>
+								<p class="desc">厄瓜多尔进口永生红玫1朵，双色永生绣球</p>
+								<span>￥<span><span>198</span>
+							</div>
+						</a></li>
+						
+						<li><a href="javascript:;">
+							<div class="pd-img"><img src="../images/1073034.jpg_220x240.jpg"></div>
+							<div class="product-info">
+								<p>爆款特惠！</p>
+								<h5>永生花/一生一世</h5>
+								<p class="desc">厄瓜多尔进口永生红玫1朵，双色永生绣球</p>
+								<span>￥<span><span>198</span>
+							</div>
+						</a></li>
+						
+						<li><a href="javascript:;">
+							<div class="pd-img"><img src="../images/1073100.jpg_220x240.jpg"></div>
+							<div class="product-info">
+								<p>爆款特惠！</p>
+								<h5>永生花/一生一世</h5>
+								<p class="desc">厄瓜多尔进口永生红玫1朵，双色永生绣球</p>
+								<span>￥<span><span>198</span>
+							</div>
+						</a></li>
+						
+						<li><a href="javascript:;">
+							<div class="pd-img"><img src="/images/1060013.jpg_220x240.jpg"></div>
+							<div class="product-info">
+								<p>爆款特惠！</p>
+								<h5>永生花/一生一世</h5>
+								<p class="desc">厄瓜多尔进口永生红玫1朵，双色永生绣球</p>
+								<span>￥<span><span>198</span>
+							</div>
+						</a></li>
+						
+						<li><a href="javascript:;">
+							<div class="pd-img"><img src="/images/1073158.jpg_220x240.jpg"></div>
+							<div class="product-info">
+								<p>Dior、YSL3款口红可选 </p>
+								<h5>永生花/我如此爱你-口红款520</h5>
+								<p class="desc">专柜正品Dior#520口红＋进口永生玫瑰礼盒</p>
+								<span>￥<span><span>588</span>
+							</div>
+						</a></li>
+						
+						<li><a href="javascript:;">
+							<div class="pd-img"><img src="../images/1070064.jpg_220x240.jpg"></div>
+							<div class="product-info">
+								<p>爆款特惠！</p>
+								<h5>特色永生花/恋心</h5>
+								<p class="desc">蓝色永生玫瑰＋紫色永生玫瑰</p>
+								<span>￥<span><span>288</span>
+							</div>
+						</a></li>
+						
+						<li><a href="javascript:;">
+							<div class="pd-img"><img src="../images/1073045.jpg_220x240.jpg"></div>
+							<div class="product-info">
+								<p>11.11首发,表白脱单神器！ </p>
+								<h5>永生花/「倾情系列」5201314/红</h5>
+								<p class="desc">正品YSL圣罗兰/迪奥口红套装＋进口永生玫瑰礼盒</p>
+								<span>￥<span><span>1314</span>
+							</div>
+						</a></li>
+						
+						<li><a href="javascript:;">
+							<div class="pd-img"><img src="../images/1060011.jpg_220x240.jpg"></div>
+							<div class="product-info">
+								<p>爆款特惠！</p>
+								<h5>永生花/一生一世</h5>
+								<p class="desc">厄瓜多尔进口永生红玫1朵，双色永生绣球</p>
+								<span>￥<span><span>198</span>
+							</div>
+						</a></li>
+						
+						<li><a href="javascript:;">
+							<div class="pd-img"><img src="../images/1073033.jpg_220x240.jpg"></div>
+							<div class="product-info">
+								<p>爆款特惠！</p>
+								<h5>永生花/一生一世</h5>
+								<p class="desc">厄瓜多尔进口永生红玫1朵，双色永生绣球</p>
+								<span>￥<span><span>198</span>
+							</div>
+						</a></li>
+						
+						<li><a href="javascript:;">
+							<div class="pd-img"><img src="../images/1073034.jpg_220x240.jpg"></div>
+							<div class="product-info">
+								<p>爆款特惠！</p>
+								<h5>永生花/一生一世</h5>
+								<p class="desc">厄瓜多尔进口永生红玫1朵，双色永生绣球</p>
+								<span>￥<span><span>198</span>
+							</div>
+						</a></li>
+						
+						<li><a href="javascript:;">
+							<div class="pd-img"><img src="../images/1073100.jpg_220x240.jpg"></div>
+							<div class="product-info">
+								<p>爆款特惠！</p>
+								<h5>永生花/一生一世</h5>
+								<p class="desc">厄瓜多尔进口永生红玫1朵，双色永生绣球</p>
+								<span>￥<span><span>198</span>
+							</div>
+						</a></li>
+						
+						<li><a href="javascript:;">
+							<div class="pd-img"><img src="/images/1060013.jpg_220x240.jpg"></div>
+							<div class="product-info">
+								<p>爆款特惠！</p>
+								<h5>永生花/一生一世</h5>
+								<p class="desc">厄瓜多尔进口永生红玫1朵，双色永生绣球</p>
+								<span>￥<span><span>198</span>
+							</div>
+						</a></li>
+						
+						<li><a href="javascript:;">
+							<div class="pd-img"><img src="/images/1073158.jpg_220x240.jpg"></div>
+							<div class="product-info">
+								<p>Dior、YSL3款口红可选 </p>
+								<h5>永生花/我如此爱你-口红款520</h5>
+								<p class="desc">专柜正品Dior#520口红＋进口永生玫瑰礼盒</p>
+								<span>￥<span><span>588</span>
+							</div>
+						</a></li>
+						
+						<li><a href="javascript:;">
+							<div class="pd-img"><img src="../images/1070064.jpg_220x240.jpg"></div>
+							<div class="product-info">
+								<p>爆款特惠！</p>
+								<h5>特色永生花/恋心</h5>
+								<p class="desc">蓝色永生玫瑰＋紫色永生玫瑰</p>
+								<span>￥<span><span>288</span>
+							</div>
+						</a></li>
+						
+						<li><a href="javascript:;">
+							<div class="pd-img"><img src="../images/1073045.jpg_220x240.jpg"></div>
+							<div class="product-info">
+								<p>11.11首发,表白脱单神器！ </p>
+								<h5>永生花/「倾情系列」5201314/红</h5>
+								<p class="desc">正品YSL圣罗兰/迪奥口红套装＋进口永生玫瑰礼盒</p>
+								<span>￥<span><span>1314</span>
+							</div>
+						</a></li>
+						
+						<li><a href="javascript:;">
+							<div class="pd-img"><img src="../images/1060011.jpg_220x240.jpg"></div>
+							<div class="product-info">
+								<p>爆款特惠！</p>
+								<h5>永生花/一生一世</h5>
+								<p class="desc">厄瓜多尔进口永生红玫1朵，双色永生绣球</p>
+								<span>￥<span><span>198</span>
+							</div>
+						</a></li>
+						
+						<li><a href="javascript:;">
+							<div class="pd-img"><img src="../images/1073033.jpg_220x240.jpg"></div>
+							<div class="product-info">
+								<p>爆款特惠！</p>
+								<h5>永生花/一生一世</h5>
+								<p class="desc">厄瓜多尔进口永生红玫1朵，双色永生绣球</p>
+								<span>￥<span><span>198</span>
+							</div>
+						</a></li>
+						
+						<li><a href="javascript:;">
+							<div class="pd-img"><img src="../images/1073034.jpg_220x240.jpg"></div>
+							<div class="product-info">
+								<p>爆款特惠！</p>
+								<h5>永生花/一生一世</h5>
+								<p class="desc">厄瓜多尔进口永生红玫1朵，双色永生绣球</p>
+								<span>￥<span><span>198</span>
+							</div>
+						</a></li>
+						
+						<li><a href="javascript:;">
+							<div class="pd-img"><img src="../images/1073100.jpg_220x240.jpg"></div>
+							<div class="product-info">
+								<p>爆款特惠！</p>
+								<h5>永生花/一生一世</h5>
+								<p class="desc">厄瓜多尔进口永生红玫1朵，双色永生绣球</p>
+								<span>￥<span><span>198</span>
+							</div>
+						</a></li>
+					</ul>
+				</div>
+				
+				
+				<div class="essay">
+					<p>永生花相关文章推荐</p>
+					<div class="essay-body">
+						<ul>
+							<li><a href="javascript:;">什么是永生花？</a></li>
+							<li><a href="javascript:;">永生花哪里有卖？</a></li>
+							<li><a href="javascript:;">永生花是真花吗？</a></li>
+							<li><a href="javascript:;">永生花多少钱？</a></li>
+							<li><a href="javascript:;">永生花怎么保养？</a></li>
+						</ul>
+						<ul>
+							<li><a href="javascript:;">永生花寓意是什么？永生花的意义是什么？</a></li>
+							<li><a href="javascript:;">永生花是什么花？如何制作永生花？永生花制作方法介绍</a></li>
+							<li><a href="javascript:;">永生花价格是多少？永生花贵吗？</a></li>
+							<li><a href="javascript:;">永生花花语，永生玫瑰花代表什么？</a></li>
+							<li><a href="javascript:;">永生花盒是什么？永生花盒哪家最好？</a></li>
+						</ul>
+						<ul>
+							<li><a href="javascript:;">情人节送永生花代表什么？ </a></li>
+							<li><a href="javascript:;">进口永生玫瑰与国产永生玫瑰的区别</a></li>
+							<li><a href="javascript:;">送女朋友保鲜花，代表不凋谢的爱情</a></li>
+							<li><a href="javascript:;">送女孩子什么礼物好？泰国保鲜花推荐</a></li>
+							<li><a href="javascript:;">结婚纪念送花：永生花·花永生·爱永恒</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer></footer>
+		<script src="/libs/require/require.js" type="text/javascript" data-main="/js/list.js"></script>
+	</body>
+</html>
